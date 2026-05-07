@@ -1,270 +1,270 @@
 [
   {
-    "id": "cmon8eyzn00797wfzhplplobx",
-    "name": "Queue-it",
-    "domain": "queue-it.com",
-    "oneLiner": "Queue-it is a tech scale-up that helps the world’s biggest brands manage their busiest days. Our virtual waiting rooms prevent website crashes and bot abuse to create a smoother, fairer online experie",
-    "industry": "itsoftware",
-    "stage": "Series B",
-    "tier": "easy"
-  },
-  {
-    "id": "cmommhwsg01gks7fznqk5276m",
-    "name": "eliseai",
-    "domain": "eliseai.com",
-    "oneLiner": "EliseAI develops cutting-edge conversational AI technology for industries fundamental to our lives: housing and healthcare. Everything is built on the foundation of health and home. Broken systems or ",
-    "industry": "AI & ML",
-    "stage": "Series B",
-    "tier": "easy"
-  },
-  {
-    "id": "cmommblru00jvs7fzq4pmkyhy",
-    "name": "Thinking Machines Lab",
-    "domain": "thinkingmachines.ai",
-    "oneLiner": "AI-powered research and product solution",
+    "id": "cmommc3vy00m3s7fzu2t9v4yw",
+    "name": "Waymo",
+    "domain": "waymo.com",
+    "oneLiner": "The world’s most trusted driver",
     "industry": "AI",
     "stage": "Series B",
     "tier": "easy"
   },
   {
-    "id": "cmommcpiu00p0s7fz0knezpyu",
-    "name": "Nexthop",
-    "domain": "nexthop.ai",
-    "oneLiner": "The next generation of networking for AI",
-    "industry": "Enterprise",
+    "id": "cmomm9u5z00azs7fzxaga3k8j",
+    "name": "Decagon",
+    "domain": "decagon.ai",
+    "oneLiner": "Enterprise AI customer service platform",
+    "industry": "ai",
     "stage": "Series B",
     "tier": "easy"
   },
   {
-    "id": "cmon97fi000fefafzl387jg2v",
-    "name": "Starburst",
-    "domain": "starburst.io",
+    "id": "cmommiock01kps7fzbo87mntt",
+    "name": "pave",
+    "domain": "pave.com",
     "oneLiner": null,
-    "industry": "data",
+    "industry": "Cloud",
     "stage": "Series B",
     "tier": "easy"
   },
   {
-    "id": "cmon23mvp001fg0fzqxup1sfg",
-    "name": "Templafy",
-    "domain": "templafy.com",
-    "oneLiner": "Eliminating manual work, one document at a time.\n\nFounded in 2014, Templafy quickly established itself as a leader in the field of enterprise template management and has since grown into a document ge",
-    "industry": "itsoftware",
+    "id": "cmon97d7v00c1fafz5rlk26qr",
+    "name": "Phantom",
+    "domain": "phantom.app",
+    "oneLiner": null,
+    "industry": "crypto",
     "stage": "Series B",
     "tier": "easy"
   },
   {
-    "id": "cmomn574l01s5s7fzchpa1sex",
-    "name": "ElevenLabs",
-    "domain": "elevenlabs.io",
+    "id": "cmon97de000ccfafz6siekqhz",
+    "name": "Point",
+    "domain": "point.com",
+    "oneLiner": null,
+    "industry": "real estate",
+    "stage": "Series B",
+    "tier": "easy"
+  },
+  {
+    "id": "cmomn5p4c01svs7fz5baxh3uy",
+    "name": "Hex",
+    "domain": "hex.tech",
     "oneLiner": null,
     "industry": "AI",
     "stage": "Series B",
     "tier": "easy"
   },
   {
-    "id": "cmon8eyg7006h7wfz5u3jx0mu",
-    "name": "Swap.com",
-    "domain": "swap.com",
-    "oneLiner": "Swap.com is the largest online consignment store in the US. The business was launched in 2012 and recently secured $20M for a total of over $50M in funding.Swap.com was recently recognized on the Inte",
-    "industry": "consumergoods",
+    "id": "cmommcbaj00n4s7fz1ovjtrhn",
+    "name": "Magic Leap",
+    "domain": "magicleap.com",
+    "oneLiner": "True Augmented Reality",
+    "industry": "Consumer",
     "stage": "Series B",
     "tier": "easy"
   },
   {
-    "id": "cmommc35f00lzs7fzrrv6b97m",
-    "name": "Granola",
-    "domain": "granola.ai",
-    "oneLiner": "Putting Your Company’s Context to Work",
-    "industry": "Enterprise",
-    "stage": "Series B",
-    "tier": "easy"
-  },
-  {
-    "id": "cmon23id2000wg0fztvuda3sl",
-    "name": "Oda",
-    "domain": "careers.oda.com",
-    "oneLiner": "Oda is the leading online grocery retailer in Norway, but as a company, we’re first and foremost an ambitious tech and logistics company - not a classic retailer. We’re one of the fastest-growing star",
-    "industry": "consumergoods",
-    "stage": "Series B",
-    "tier": "easy"
-  },
-  {
-    "id": "cmon3iayk00bbwufz7phrerj5",
-    "name": "QueryPie AI",
-    "domain": "querypie.com",
-    "oneLiner": "QueryPie AIP - Enterprise Ready Agentic AI Platform",
-    "industry": "B2B",
-    "stage": "Series A",
-    "tier": "medium"
-  },
-  {
-    "id": "cmon8ewq3003z7wfz9bwwzhkm",
-    "name": "Welo Data",
-    "domain": "welodata.ai",
-    "oneLiner": "Training high-quality datasets generated through ethical human-in-loop workflows to fuel world-class AI models. Combining 27+ years of language expertise in localization and AI data to support e2e mod",
-    "industry": "itsoftware",
-    "stage": "Series A",
-    "tier": "medium"
-  },
-  {
-    "id": "cmn1yup6o024kaumy0l5kl67b",
-    "name": "Conveo",
-    "domain": "conveo.ai",
-    "oneLiner": "Confident decisions in days with AI-led interviews.",
-    "industry": "B2B",
-    "stage": "Series A",
-    "tier": "medium"
-  },
-  {
-    "id": "cmomm9y4l00bhs7fzn7qux8is",
-    "name": "Ecosoul",
-    "domain": "ecosoulhome.com",
-    "oneLiner": "Bio-based and organic home items",
-    "industry": "Consumer",
-    "stage": "Series A",
-    "tier": "medium"
-  },
-  {
-    "id": "cmon22ms1001idafzlc09cwer",
-    "name": "ZBiotics",
-    "domain": "zbiotics.com",
-    "oneLiner": "ZBiotics makes genetically engineered probiotics.",
-    "industry": "Healthcare",
-    "stage": "Series A",
-    "tier": "medium"
-  },
-  {
-    "id": "cmon3h73h0061wufzftuc3slk",
-    "name": "Beacons",
-    "domain": "beacons.ai",
-    "oneLiner": "An AI-powered, all-in-one business platform for content creators",
-    "industry": "Consumer",
-    "stage": "Series A",
-    "tier": "medium"
-  },
-  {
-    "id": "cmommbnat00k3s7fzban2vatd",
-    "name": "Tracxn",
-    "domain": "traxcn.com",
-    "oneLiner": "Startup market research and data provider",
-    "industry": "Cloud / SaaS",
-    "stage": "Series A",
-    "tier": "medium"
-  },
-  {
-    "id": "cmon23fhy000pg0fzv30cw27f",
-    "name": "Strise",
-    "domain": "strise.ai",
-    "oneLiner": "Strise is a fast-expanding technology company based in Oslo. We have built a revolutionary AML (anti-money laundering) Automation Cloud to help top-tier banks, fintechs, and other financial institutio",
-    "industry": "fintech",
-    "stage": "Series A",
-    "tier": "medium"
-  },
-  {
-    "id": "cmomm9uk600b1s7fz9w9hh28k",
-    "name": "Deepnote",
-    "domain": "deepnote.com",
-    "oneLiner": "A better data science notebook.",
-    "industry": "B2B",
-    "stage": "Series A",
-    "tier": "medium"
-  },
-  {
-    "id": "cmomm94t0007ls7fzj0h7y26f",
-    "name": "1Password",
-    "domain": "1password.com",
-    "oneLiner": "Identity security and access management solutions",
-    "industry": "Consumer",
-    "stage": "Series A",
-    "tier": "medium"
-  },
-  {
-    "id": "cmomm94n0007ks7fzfit90v3s",
-    "name": "1Balance",
-    "domain": "1balance.com",
-    "oneLiner": "Subscription-based herbal supplements",
-    "industry": "Consumer",
-    "stage": "Seed",
-    "tier": "hard"
-  },
-  {
-    "id": "cmommdiqz00tns7fz4r39cio9",
-    "name": "The Climate Corporation",
-    "domain": "climate.com",
+    "id": "cmon8y5tb000a7yfz6k9lrdzn",
+    "name": "AKASA",
+    "domain": "akasa.com",
     "oneLiner": null,
-    "industry": "Frontier Tech",
-    "stage": "Seed",
-    "tier": "hard"
+    "industry": "health",
+    "stage": "Series B",
+    "tier": "easy"
   },
   {
-    "id": "cmon3j0v200flwufztv37wl5n",
-    "name": "Minimum",
-    "domain": "minimum.com",
-    "oneLiner": "Helping corporates achieve Net Zero through tech solutions. ",
+    "id": "cmommappd00f2s7fz5e2vtc1e",
+    "name": "Mux",
+    "domain": "mux.com",
+    "oneLiner": "Video infrastructure for developers",
+    "industry": "Developer Tools",
+    "stage": "Series B",
+    "tier": "easy"
+  },
+  {
+    "id": "cmomme64y00wvs7fz3maal1jv",
+    "name": "ROME Therapeutics",
+    "domain": "rometx.com",
+    "oneLiner": null,
+    "industry": "Life Sciences",
+    "stage": "Series B",
+    "tier": "easy"
+  },
+  {
+    "id": "cmon3h6c0005wwufz6rf1bjiu",
+    "name": "Dover",
+    "domain": "dover.com",
+    "oneLiner": "Your startup's all-in-one recruiting solution",
+    "industry": "B2B",
+    "stage": "Series A",
+    "tier": "medium"
+  },
+  {
+    "id": "cmomm957e007ns7fzie02eqrp",
+    "name": "Acalvio",
+    "domain": "acalvio.com",
+    "oneLiner": "Enterprise-scale cyber deception technology",
+    "industry": "Enterprise",
+    "stage": "Series A",
+    "tier": "medium"
+  },
+  {
+    "id": "cmommhqbl01fhs7fzko0fmhee",
+    "name": "Courier",
+    "domain": "courier.com",
+    "oneLiner": "The fastest way for developers to build notifications for their app.",
+    "industry": "B2B",
+    "stage": "Series A",
+    "tier": "medium"
+  },
+  {
+    "id": "cmn1yt23q01j6aumy69hy405a",
+    "name": "Velontra",
+    "domain": "velontra.com",
+    "oneLiner": "Hypersonic space plane that can take-off from any location and weather",
     "industry": "Industrials",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Series A",
+    "tier": "medium"
   },
   {
-    "id": "cmn1ywdkj02qvaumyqg4ewu7i",
-    "name": "Specific",
-    "domain": "specific.dev",
-    "oneLiner": "Build and deploy production-ready backends without code",
+    "id": "cmn1yrdx300x8aumyxi1259ol",
+    "name": "Epsilon3",
+    "domain": "epsilon3.io",
+    "oneLiner": "AI-Powered ERP, MES, and Test Software for Complex Operations",
     "industry": "B2B",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Series A",
+    "tier": "medium"
   },
   {
-    "id": "cmn1yrjek00z9aumy4urczog3",
-    "name": "Anakin",
-    "domain": "anakin.company",
-    "oneLiner": "We automate pricing for eCommerce and on-demand service companies",
+    "id": "cmn1yr9k700vmaumym7iirl9r",
+    "name": "Spline",
+    "domain": "spline.design",
+    "oneLiner": "Design and collaborate in multiple dimensions.",
     "industry": "B2B",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Series A",
+    "tier": "medium"
   },
   {
-    "id": "cmn1ys59m017caumywv7ozyxh",
-    "name": "Sekilo",
-    "domain": "sekilo.com",
-    "oneLiner": "Poultry processing & supply chain for the SME foodservice industry.",
+    "id": "cmn1ys51h0179aumygk3zfsaf",
+    "name": "Gym Class - by IRL Studios",
+    "domain": "gymclass.com",
+    "oneLiner": "Connecting the world by simulating it",
+    "industry": "Consumer",
+    "stage": "Series A",
+    "tier": "medium"
+  },
+  {
+    "id": "cmon3j4ss00g9wufzoqzwb0ln",
+    "name": "Warmly,",
+    "domain": "warmly.ai",
+    "oneLiner": "Autonomous sales platform to auto-email your warmest leads",
     "industry": "B2B",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Series A",
+    "tier": "medium"
   },
   {
-    "id": "cmn1ysak4019aaumy06ywso3z",
-    "name": "RedBrick AI",
-    "domain": "redbrickai.com",
-    "oneLiner": "Rapid medical data annotation",
+    "id": "cmon3hjax007owufzmoy8wfzs",
+    "name": "Obie",
+    "domain": "obieinsurance.com",
+    "oneLiner": "Moving Investment Property Insurance Forward",
+    "industry": "Real Estate and Construction",
+    "stage": "Series A",
+    "tier": "medium"
+  },
+  {
+    "id": "cmn1yue2y020gaumymawcsbpd",
+    "name": "Datacurve",
+    "domain": "datacurve.ai",
+    "oneLiner": "Frontier coding data for training and evaluating LLMs",
     "industry": "B2B",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Series A",
+    "tier": "medium"
   },
   {
-    "id": "cmn1yrhwg00ypaumydbfh1ss1",
-    "name": "Instalab",
-    "domain": "instalab.com",
-    "oneLiner": "Proactive Testing and Treatments",
-    "industry": "Healthcare",
-    "stage": "Seed",
-    "tier": "hard"
-  },
-  {
-    "id": "cmn1yurhz025faumy2rgogwy6",
-    "name": "BeeBettor",
-    "domain": "beebettor.com",
-    "oneLiner": "Robinhood for sports prediction markets",
+    "id": "cmommbkla00jps7fzwl5v4see",
+    "name": "Tema",
+    "domain": "temaetfs.com",
+    "oneLiner": "ETFs investment platform",
     "industry": "Consumer",
     "stage": "Seed",
     "tier": "hard"
   },
   {
-    "id": "cmn1yvk2e02fxaumy4b5pvys5",
-    "name": "Golf",
-    "domain": "golf.dev",
-    "oneLiner": "Agentic AI Security and Governance",
+    "id": "cmn1yrtyu0135aumy42nvymw2",
+    "name": "Telmai",
+    "domain": "telm.ai",
+    "oneLiner": "Automated data observability and quality for Data Lake",
+    "industry": "B2B",
+    "stage": "Seed",
+    "tier": "hard"
+  },
+  {
+    "id": "cmommb70m00hqs7fzh1fz719p",
+    "name": "Sapiom",
+    "domain": "sapiom.ai",
+    "oneLiner": "Enterprise financial automation platform for autonomous AI agents‍",
+    "industry": "AI",
+    "stage": "Seed",
+    "tier": "hard"
+  },
+  {
+    "id": "cmommdevm00t0s7fz9l7uvkg8",
+    "name": "Wonder",
+    "domain": "askwonder.com",
+    "oneLiner": null,
+    "industry": "Enterprise",
+    "stage": "Seed",
+    "tier": "hard"
+  },
+  {
+    "id": "cmn1yvwre02kmaumyq4u33p1g",
+    "name": "Overdrive Health",
+    "domain": "overdrive.health",
+    "oneLiner": "AI Powered Medical Billing",
+    "industry": "Healthcare",
+    "stage": "Seed",
+    "tier": "hard"
+  },
+  {
+    "id": "cmn1yuh1t021jaumywxupwes2",
+    "name": "Same",
+    "domain": "same.new",
+    "oneLiner": "Build products without coding",
+    "industry": "Consumer",
+    "stage": "Seed",
+    "tier": "hard"
+  },
+  {
+    "id": "cmn1yuq5l024xaumy1ndt7glb",
+    "name": "Vibe",
+    "domain": "vibe.codes",
+    "oneLiner": "Making everyone a software engineer",
+    "industry": "B2B",
+    "stage": "Seed",
+    "tier": "hard"
+  },
+  {
+    "id": "cmn1yw0ku02m1aumyz3a7w6ph",
+    "name": "Solva",
+    "domain": "solvatechnology.com",
+    "oneLiner": "Automates insurance claims and stops incorrect payouts",
+    "industry": "Fintech",
+    "stage": "Seed",
+    "tier": "hard"
+  },
+  {
+    "id": "cmommcw8q00pys7fzwu4y6a86",
+    "name": "eero",
+    "domain": "eero.com",
+    "oneLiner": null,
+    "industry": "Consumer",
+    "stage": "Seed",
+    "tier": "hard"
+  },
+  {
+    "id": "cmn1yt8cj01lhaumyc0nhjwye",
+    "name": "Pirros",
+    "domain": "pirros.com",
+    "oneLiner": "Github for Construction",
     "industry": "B2B",
     "stage": "Seed",
     "tier": "hard"
