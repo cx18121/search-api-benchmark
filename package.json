@@ -1,0 +1,19 @@
+{
+  "name": "exa-search-benchmark",
+  "version": "0.1.0",
+  "description": "B2B company research retrieval benchmark — Exa vs Tavily.",
+  "type": "module",
+  "scripts": {
+    "eval": "tsx src/run-eval.ts",
+    "judge:validate": "tsx src/validate-judge.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}
