@@ -13,11 +13,11 @@ Two tracks:
 - **Track 1** (`npm run eval`) — per-result pointwise eval. Each retrieved result is scored on whether it's about the target company, contains an actual recent development, and comes from a reputable source.
 - **Track 2** (`npm run eval:agent`) — A research agent runs a multi step loop using the search API as a tool, produces a structured brief (recent launches, leadership changes, strategic shifts, 3–5 outreach hooks), and the brief is scored. This is how I actually use the search API for Sparrow.
 
-Each Track 2 run is scored through three independent lenses:
+Each Track 2 run is scored through three independent parameters:
 
-1. **Pointwise judge** — explicit rubric using Claude Sonnet 4.6 as the judge, scores each brief from 1–5.
-2. **Pairwise judge** — compares Exa-fed and Tavily-fed briefs side-by-side, run twice with order swapped; only consistent verdicts count.
-3. **Objective metrics** — no judge involved: distinct domains, primary-source rate, median age of dated content, tokens per usable hook.
+1. **Pointwise judge** with explicit rubric using Claude Sonnet 4.6 as the judge, scores each brief from 0-5
+2. **Pairwise judge** compares Exa and Tavily produced briefs side-by-side, run twice with order swapped, only consistent verdicts count.
+3. **Objective metrics** with no judge: distinct domains, primary-source rate, median age of dated content, tokens per usable hook.
 
 ## Results
 
@@ -38,13 +38,13 @@ Each Track 2 run is scored through three independent lenses:
 | Ties (both orderings agree it's a tie)     | 0          |
 | Inconsistent — judge flipped on order swap | **9 / 15** |
 
-I ran this benchmark on 15 startups from [`data/companies.json`](data/companies.json), pulled directly from my Sparrow database. Out of those 15, there were 5 seed stage, 5 Series A, and 5 Series B companies.
+I ran this benchmark on 15 startups from [`data/companies.json`](data/companies.json), and the information about each company was pulled directly from my database of startups that I'm using for Sparrow. There were 5 seed stage, 5 Series A, and 5 Series B.
 
 The pointwise and pairwise judges _disagree_, and that disagreement is an important finding. Pointwise (rubric-anchored) says Exa wins overall, while the pairwise comparison (without the rubric) favors Tavily's slightly fuller-looking briefs and flips on order swap 60% of the time.
 
-The 9/15 pairwise inconsistency rate is also interesting. Position bias of 30–60% on close comparisons is consistent with published LLM-judge research (Arena-Hard, AlpacaEval, G-Eval) — when two outputs are close on the dimensions the judge cares about, whichever one is shown first tends to win.
+The 9/15 pairwise inconsistency rate is also interesting. Position bias of 30–60% on close comparisons is consistent with published LLM-judge research (Arena-Hard, AlpacaEval, G-Eval), which is when two outputs are close on the dimensions the judge cares about, whichever one is shown first tends to win.
 
-My takeaway is that the pairwise test alone is unreliable for close comparisons; the rubric-anchored pointwise judge plus the objective metrics are the more reliable lenses, and they agree.
+My takeaway from this is that the pairwise test alone is unreliable for close comparisons, and the rubric based pointwise comparison and objective metrics are the tests that are more relevant. Based on those tests, Exa wins over Tavily, which is good to know for me so I know to continue using Exa for Sparrow.
 
 Full results: [`results/agent-2026-05-08.json`](results/agent-2026-05-08.json).
 
@@ -52,7 +52,7 @@ Full results: [`results/agent-2026-05-08.json`](results/agent-2026-05-08.json).
 
 I would scale to test more companies at a variety of stages, including pre-seed companies. I'd also add Brave / Perplexity / Claude web search. Also add more LLM models as judges (ex. GPT/Gemini/Kimi).
 
-I'd also add edge / adversarial cases — companies with name collisions, recent rebrands, and non-US companies — to test robustness on the long tail.
+I'd also add edge/adversial cases, so companies with the same name as another company, recent rebrands, and non-US companies.
 
 ## How to run
 
@@ -60,11 +60,9 @@ I'd also add edge / adversarial cases — companies with name collisions, recent
 cp .env.example .env       # EXA_API_KEY, TAVILY_API_KEY, ANTHROPIC_API_KEY
 npm install
 
-npm run eval                              # per-result eval (Track 1)
-npm run eval:agent -- --per-stage 5       # agent eval (Track 2), 5 companies per stage = 15 total
+npm run eval                              # per result
+npm run eval:agent -- --per-stage 5       # agent eval, 5 companies per stage = 15 total
 ```
-
-`eval:agent` flags: `--limit N` (first N companies), `--per-stage N` (stratified — what produced the headline results), `--max-iter N` (agent search budget, default 6), `--recency N` (recency window in days, default 90), `--no-pairwise`, `--out path`. Runs checkpoint after every company; crashes resume.
 
 ## How to add a new search API
 
