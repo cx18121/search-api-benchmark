@@ -3,10 +3,9 @@
     "id": "cmommc3vy00m3s7fzu2t9v4yw",
     "name": "Waymo",
     "domain": "waymo.com",
-    "oneLiner": "The world’s most trusted driver",
+    "oneLiner": "The world\u2019s most trusted driver",
     "industry": "AI",
-    "stage": "Series B",
-    "tier": "easy"
+    "stage": "Series B"
   },
   {
     "id": "cmomm9u5z00azs7fzxaga3k8j",
@@ -14,8 +13,7 @@
     "domain": "decagon.ai",
     "oneLiner": "Enterprise AI customer service platform",
     "industry": "ai",
-    "stage": "Series B",
-    "tier": "easy"
+    "stage": "Series B"
   },
   {
     "id": "cmommiock01kps7fzbo87mntt",
@@ -23,8 +21,7 @@
     "domain": "pave.com",
     "oneLiner": null,
     "industry": "Cloud",
-    "stage": "Series B",
-    "tier": "easy"
+    "stage": "Series B"
   },
   {
     "id": "cmon97d7v00c1fafz5rlk26qr",
@@ -32,8 +29,7 @@
     "domain": "phantom.app",
     "oneLiner": null,
     "industry": "crypto",
-    "stage": "Series B",
-    "tier": "easy"
+    "stage": "Series B"
   },
   {
     "id": "cmon97de000ccfafz6siekqhz",
@@ -41,8 +37,7 @@
     "domain": "point.com",
     "oneLiner": null,
     "industry": "real estate",
-    "stage": "Series B",
-    "tier": "easy"
+    "stage": "Series B"
   },
   {
     "id": "cmomn5p4c01svs7fz5baxh3uy",
@@ -50,8 +45,7 @@
     "domain": "hex.tech",
     "oneLiner": null,
     "industry": "AI",
-    "stage": "Series B",
-    "tier": "easy"
+    "stage": "Series B"
   },
   {
     "id": "cmommcbaj00n4s7fz1ovjtrhn",
@@ -59,8 +53,7 @@
     "domain": "magicleap.com",
     "oneLiner": "True Augmented Reality",
     "industry": "Consumer",
-    "stage": "Series B",
-    "tier": "easy"
+    "stage": "Series B"
   },
   {
     "id": "cmon8y5tb000a7yfz6k9lrdzn",
@@ -68,8 +61,7 @@
     "domain": "akasa.com",
     "oneLiner": null,
     "industry": "health",
-    "stage": "Series B",
-    "tier": "easy"
+    "stage": "Series B"
   },
   {
     "id": "cmommappd00f2s7fz5e2vtc1e",
@@ -77,8 +69,7 @@
     "domain": "mux.com",
     "oneLiner": "Video infrastructure for developers",
     "industry": "Developer Tools",
-    "stage": "Series B",
-    "tier": "easy"
+    "stage": "Series B"
   },
   {
     "id": "cmomme64y00wvs7fz3maal1jv",
@@ -86,8 +77,7 @@
     "domain": "rometx.com",
     "oneLiner": null,
     "industry": "Life Sciences",
-    "stage": "Series B",
-    "tier": "easy"
+    "stage": "Series B"
   },
   {
     "id": "cmon3h6c0005wwufz6rf1bjiu",
@@ -95,8 +85,7 @@
     "domain": "dover.com",
     "oneLiner": "Your startup's all-in-one recruiting solution",
     "industry": "B2B",
-    "stage": "Series A",
-    "tier": "medium"
+    "stage": "Series A"
   },
   {
     "id": "cmomm957e007ns7fzie02eqrp",
@@ -104,8 +93,7 @@
     "domain": "acalvio.com",
     "oneLiner": "Enterprise-scale cyber deception technology",
     "industry": "Enterprise",
-    "stage": "Series A",
-    "tier": "medium"
+    "stage": "Series A"
   },
   {
     "id": "cmommhqbl01fhs7fzko0fmhee",
@@ -113,8 +101,7 @@
     "domain": "courier.com",
     "oneLiner": "The fastest way for developers to build notifications for their app.",
     "industry": "B2B",
-    "stage": "Series A",
-    "tier": "medium"
+    "stage": "Series A"
   },
   {
     "id": "cmn1yt23q01j6aumy69hy405a",
@@ -122,8 +109,7 @@
     "domain": "velontra.com",
     "oneLiner": "Hypersonic space plane that can take-off from any location and weather",
     "industry": "Industrials",
-    "stage": "Series A",
-    "tier": "medium"
+    "stage": "Series A"
   },
   {
     "id": "cmn1yrdx300x8aumyxi1259ol",
@@ -131,8 +117,7 @@
     "domain": "epsilon3.io",
     "oneLiner": "AI-Powered ERP, MES, and Test Software for Complex Operations",
     "industry": "B2B",
-    "stage": "Series A",
-    "tier": "medium"
+    "stage": "Series A"
   },
   {
     "id": "cmn1yr9k700vmaumym7iirl9r",
@@ -140,8 +125,7 @@
     "domain": "spline.design",
     "oneLiner": "Design and collaborate in multiple dimensions.",
     "industry": "B2B",
-    "stage": "Series A",
-    "tier": "medium"
+    "stage": "Series A"
   },
   {
     "id": "cmn1ys51h0179aumygk3zfsaf",
@@ -149,8 +133,7 @@
     "domain": "gymclass.com",
     "oneLiner": "Connecting the world by simulating it",
     "industry": "Consumer",
-    "stage": "Series A",
-    "tier": "medium"
+    "stage": "Series A"
   },
   {
     "id": "cmon3j4ss00g9wufzoqzwb0ln",
@@ -158,8 +141,7 @@
     "domain": "warmly.ai",
     "oneLiner": "Autonomous sales platform to auto-email your warmest leads",
     "industry": "B2B",
-    "stage": "Series A",
-    "tier": "medium"
+    "stage": "Series A"
   },
   {
     "id": "cmon3hjax007owufzmoy8wfzs",
@@ -167,8 +149,7 @@
     "domain": "obieinsurance.com",
     "oneLiner": "Moving Investment Property Insurance Forward",
     "industry": "Real Estate and Construction",
-    "stage": "Series A",
-    "tier": "medium"
+    "stage": "Series A"
   },
   {
     "id": "cmn1yue2y020gaumymawcsbpd",
@@ -176,8 +157,7 @@
     "domain": "datacurve.ai",
     "oneLiner": "Frontier coding data for training and evaluating LLMs",
     "industry": "B2B",
-    "stage": "Series A",
-    "tier": "medium"
+    "stage": "Series A"
   },
   {
     "id": "cmommbkla00jps7fzwl5v4see",
@@ -185,8 +165,7 @@
     "domain": "temaetfs.com",
     "oneLiner": "ETFs investment platform",
     "industry": "Consumer",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Seed"
   },
   {
     "id": "cmn1yrtyu0135aumy42nvymw2",
@@ -194,17 +173,15 @@
     "domain": "telm.ai",
     "oneLiner": "Automated data observability and quality for Data Lake",
     "industry": "B2B",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Seed"
   },
   {
     "id": "cmommb70m00hqs7fzh1fz719p",
     "name": "Sapiom",
     "domain": "sapiom.ai",
-    "oneLiner": "Enterprise financial automation platform for autonomous AI agents‍",
+    "oneLiner": "Enterprise financial automation platform for autonomous AI agents\u200d",
     "industry": "AI",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Seed"
   },
   {
     "id": "cmommdevm00t0s7fz9l7uvkg8",
@@ -212,8 +189,7 @@
     "domain": "askwonder.com",
     "oneLiner": null,
     "industry": "Enterprise",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Seed"
   },
   {
     "id": "cmn1yvwre02kmaumyq4u33p1g",
@@ -221,8 +197,7 @@
     "domain": "overdrive.health",
     "oneLiner": "AI Powered Medical Billing",
     "industry": "Healthcare",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Seed"
   },
   {
     "id": "cmn1yuh1t021jaumywxupwes2",
@@ -230,8 +205,7 @@
     "domain": "same.new",
     "oneLiner": "Build products without coding",
     "industry": "Consumer",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Seed"
   },
   {
     "id": "cmn1yuq5l024xaumy1ndt7glb",
@@ -239,8 +213,7 @@
     "domain": "vibe.codes",
     "oneLiner": "Making everyone a software engineer",
     "industry": "B2B",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Seed"
   },
   {
     "id": "cmn1yw0ku02m1aumyz3a7w6ph",
@@ -248,8 +221,7 @@
     "domain": "solvatechnology.com",
     "oneLiner": "Automates insurance claims and stops incorrect payouts",
     "industry": "Fintech",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Seed"
   },
   {
     "id": "cmommcw8q00pys7fzwu4y6a86",
@@ -257,8 +229,7 @@
     "domain": "eero.com",
     "oneLiner": null,
     "industry": "Consumer",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Seed"
   },
   {
     "id": "cmn1yt8cj01lhaumyc0nhjwye",
@@ -266,7 +237,6 @@
     "domain": "pirros.com",
     "oneLiner": "Github for Construction",
     "industry": "B2B",
-    "stage": "Seed",
-    "tier": "hard"
+    "stage": "Seed"
   }
 ]
