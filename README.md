@@ -1,35 +1,70 @@
 # exa-search-benchmark
 
-A benchmark for evaluating search APIs on **B2B company research retrieval** — given a company, find recent, useful, company-specific information of the kind a salesperson, recruiter, or VC analyst would want before reaching out.
+This is a benchmark for evaluating search APIs on company research retrieval. Given a company, this benchmark tests a search API's ability to find recent, useful, company-specific information that someone like a salesperson, recruiter, or VC analyst would want.
 
-Inspired by [Sparrow](https://github.com/cx18121/sparrow), a cold-email automation tool that uses Exa to research target companies before drafting personalized outreach. Sparrow's smoke test (`scripts/smoke-exa-vs-tavily.ts`) was scored manually by eye; this benchmark replaces that with an automated AI judge so the comparison is reproducible.
+I decided to build this benchmark for this specific use case because I built a cold-email automation tool called [Sparrow](https://github.com/cx18121/sparrow) that uses Exa to do research on specific startups in order to provide context to draft personalized outreach emails.
 
-## What this benchmark measures
+When building Sparrow, I was trying to decide between a few different search APIs, including Tavily, Brave, Claude web search, and Exa. I wanted to find the best search API that would provide me relevant information that I could incorporate into my emails, but I didn't have a proper way to benchmark it then.
 
-A search API's ability to surface, given a company name + domain, results that:
+## What it measures
 
-1. Are **about the target company** (not noise, not a different company with a similar name, not generic industry content)
-2. Contain a **concrete, recent development** (product launch, hire, funding, strategy shift) — not stale or generic content
-3. Come from a **reputable source** (the company's own site, a real publication) rather than aggregator spam, SEO-farmed listicles, or off-topic content from the right domain
+Two tracks:
 
-Each retrieved result is scored on these three axes by an AI judge (Claude). Per-API scores are aggregated across companies.
+- **Track 1** (`npm run eval`) — per-result pointwise eval. Each retrieved result is scored on whether it's about the target company, contains an actual recent development, and comes from a reputable source.
+- **Track 2** (`npm run eval:agent`) — A research agent runs a multi step loop using the search API as a tool, produces a structured brief (recent launches, leadership changes, strategic shifts, 3–5 outreach hooks), and the brief is scored. This is how I actually use the search API for Sparrow.
 
-## Why this matters
+Each Track 2 run is scored through three independent lenses:
 
-Anyone building tools for sales, recruiting, or investment research depends on a search API to power "give me context on this company." Most existing search benchmarks test factual lookup or named entity retrieval — none test the specific shape of "find me recent, actionable signals about this specific company." This benchmark fills that gap.
+1. **Pointwise judge** — explicit rubric using Claude Sonnet 4.6 as the judge, scores each brief from 1–5.
+2. **Pairwise judge** — compares Exa-fed and Tavily-fed briefs side-by-side, run twice with order swapped; only consistent verdicts count.
+3. **Objective metrics** — no judge involved: distinct domains, primary-source rate, median age of dated content, tokens per usable hook.
 
-## Status
+## Results
 
-In progress. See `tasks/` (TODO) for the build plan.
+| Metric                      | Exa          | Tavily   |
+| --------------------------- | ------------ | -------- |
+| Pointwise overall (1–5)     | **4.60**     | 3.53     |
+| Usable hooks per brief      | **4.33 / 5** | 2.40 / 5 |
+| Median age of dated content | **66d**      | 177d     |
+| Tokens per usable hook      | **7,152**    | 11,655   |
+| Distinct domains cited      | 4.20         | **4.80** |
+
+**Pairwise (15 head-to-head comparisons, run with order swapped):**
+
+| Outcome                                    | Count      |
+| ------------------------------------------ | ---------- |
+| Exa wins (consistent on both orderings)    | 2          |
+| Tavily wins (consistent on both orderings) | 4          |
+| Ties (both orderings agree it's a tie)     | 0          |
+| Inconsistent — judge flipped on order swap | **9 / 15** |
+
+I ran this benchmark on 15 startups from [`data/companies.json`](data/companies.json), pulled directly from my Sparrow database. Out of those 15, there were 5 seed stage, 5 Series A, and 5 Series B companies.
+
+The pointwise and pairwise judges _disagree_, and that disagreement is an important finding. Pointwise (rubric-anchored) says Exa wins overall, while the pairwise comparison (without the rubric) favors Tavily's slightly fuller-looking briefs and flips on order swap 60% of the time.
+
+The 9/15 pairwise inconsistency rate is also interesting. Position bias of 30–60% on close comparisons is consistent with published LLM-judge research (Arena-Hard, AlpacaEval, G-Eval) — when two outputs are close on the dimensions the judge cares about, whichever one is shown first tends to win.
+
+My takeaway is that the pairwise test alone is unreliable for close comparisons; the rubric-anchored pointwise judge plus the objective metrics are the more reliable lenses, and they agree.
+
+Full results: [`results/agent-2026-05-08.json`](results/agent-2026-05-08.json).
+
+## With more time
+
+I would scale to test more companies at a variety of stages, including pre-seed companies. I'd also add Brave / Perplexity / Claude web search. Also add more LLM models as judges (ex. GPT/Gemini/Kimi).
+
+I'd also add edge / adversarial cases — companies with name collisions, recent rebrands, and non-US companies — to test robustness on the long tail.
 
 ## How to run
 
 ```bash
-cp .env.example .env
-# fill in EXA_API_KEY, TAVILY_API_KEY, ANTHROPIC_API_KEY
+cp .env.example .env       # EXA_API_KEY, TAVILY_API_KEY, ANTHROPIC_API_KEY
 npm install
-npm run eval
+
+npm run eval                              # per-result eval (Track 1)
+npm run eval:agent -- --per-stage 5       # agent eval (Track 2), 5 companies per stage = 15 total
 ```
+
+`eval:agent` flags: `--limit N` (first N companies), `--per-stage N` (stratified — what produced the headline results), `--max-iter N` (agent search budget, default 6), `--recency N` (recency window in days, default 90), `--no-pairwise`, `--out path`. Runs checkpoint after every company; crashes resume.
 
 ## How to add a new search API
 
@@ -42,10 +77,4 @@ class MySearcher implements Searcher {
 }
 ```
 
-Register it in `src/run-eval.ts` and re-run.
-
-## Limitations
-
-- Companies are drawn from a real production database (Sparrow), so the distribution skews toward early-stage US/EU SaaS startups. Results may not generalize to other verticals.
-- The AI judge introduces some subjectivity. Validation against manual annotations is included (see `npm run judge:validate`).
-- 20–30 companies is enough to detect large differences between APIs but not small ones. Treat results as directional.
+Register it in `src/run-eval.ts` or `src/run-agent-eval.ts`.

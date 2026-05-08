@@ -4,4 +4,6 @@ dist/
 .env.local
 results/*.json
 !results/.gitkeep
+!results/agent-2026-05-08.json
+!results/2026-05-07-no-domain-5000.json
 .DS_Store
