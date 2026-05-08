@@ -350,15 +350,33 @@ function getSourceField(result: SearchResult, source: EvidenceSource): string {
   }
 }
 
+function normalizeTypography(s: string): string {
+  // Models reliably casualize typographic punctuation when copying
+  // (smart quotes → ASCII, em/en dashes → hyphen, ellipsis → three dots).
+  // We map both source and quote into the same casual form before the
+  // substring check so the validation doesn't reject otherwise-faithful
+  // quotes for unicode the model can't reasonably preserve. Genuine
+  // fabrications still fail because they involve different *words*, not
+  // just different glyphs.
+  return s
+    .replace(/[‘’‚‛]/g, "'")
+    .replace(/[“”„‟]/g, '"')
+    .replace(/[–—−]/g, '-')
+    .replace(/…/g, '...')
+}
+
 function isVerbatimSubstring(quote: string, source: string): boolean {
   if (quote.length === 0) return false
   // Strict, case-sensitive match first — the prompt says "verbatim,
-  // case-matching." Whitespace-collapsed match is the only fallback,
-  // because models occasionally normalize \n into spaces or vice versa
-  // when copying. We deliberately do NOT lowercase.
+  // case-matching." We deliberately do NOT lowercase. Two layered fallbacks:
+  // typographic normalization (smart quotes, dashes, ellipsis) and then
+  // whitespace collapsing. Both must remain strict on actual letters.
   if (source.includes(quote)) return true
+  const normSource = normalizeTypography(source)
+  const normQuote = normalizeTypography(quote)
+  if (normSource.includes(normQuote)) return true
   const collapse = (s: string) => s.replace(/\s+/g, ' ').trim()
-  return collapse(source).includes(collapse(quote))
+  return collapse(normSource).includes(collapse(normQuote))
 }
 
 export class Judge {

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "eval": "tsx src/run-eval.ts",
+    "eval:agent": "tsx src/run-agent-eval.ts",
     "judge:validate": "tsx src/validate-judge.ts"
   },
   "dependencies": {
@@ -12,7 +13,7 @@
     "dotenv": "^16.4.5"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
+    "@types/node": "^22.19.18",
     "tsx": "^4.19.0",
     "typescript": "^5.5.0"
   }
